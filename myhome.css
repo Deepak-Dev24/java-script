@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    text-align: center;
+}
+.header{
+    background-color: red;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 550px;
+}
+.one{
+    background-color: green;
+    width: 33%;
+ 
+
+}
+.two{
+    width: 34%;
+}
+.two img{
+    height: 100%;
+    width: 100%;
+}
+.three{
+    background-color: brown;
+    width: 33%;
+    
+}
+.footer{
+    background-color: orangered;
+}
+.nav{
+    text-align: left;
+   padding: 10px;
+
+
+}
+.nav a{
+   text-decoration: none;
+   margin: 50px;
+   font-size: 20px;
+   
+}

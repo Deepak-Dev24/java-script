@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>month of days</h1>
+    <script>
+        //days of month
+        let month = 13;
+        let days = 29;
+        if (month == 2  || month == 4 || month == 6 || month == 9 || month == 11) {
+            if (month == 2) {
+                if (days != 29) {
+                    console.log("28 days");
+                }
+                else {
+                    console.log("29 days This is leap year");
+                }
+            }
+            else {
+                console.log("30 days");
+            }
+
+        }
+        else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+            console.log("31 days");
+        }
+        else {
+            console.log("please enter  number between 1 to 12");
+        }   
+    </script>
+</body>
+
+</html>

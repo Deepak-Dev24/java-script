@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays of Method</h1>
+    <p id="name"></p>
+    <button onclick="func()">join with star</button>
+    <button onclick="func1()">join with hash</button>
+    <button onclick="func2()">join with plus</button>
+    <button onclick="func3()">join with doller</button>
+    <hr>
+<script>
+                                                //             Array join()
+ function func(){
+    document.getElementById("name").innerHTML= arr.join(" * ");
+
+}
+ function func1(){
+    document.getElementById("name").innerHTML= arr.join(" # ");
+ }
+ function func2(){
+    document.getElementById("name").innerHTML= arr.join(" + ");
+ }
+ function func3(){
+    document.getElementById("name").innerHTML= arr.join(" $ ");
+ }
+let arr=["apple", "mango","orange","potato","tomato","papaya"]   
+document.getElementById("name").innerHTML= arr;
+
+
+
+
+</script>
+</body>
+</html>

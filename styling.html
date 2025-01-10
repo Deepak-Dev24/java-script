@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+       .box{
+        height: 500px;
+        width: 300px;
+        background-color: green;
+ 
+       }
+   
+    </style>
+</head>
+<body>
+    <div id="con" class="box" ></div>
+    <button onclick="myeffect()">hide box</button>
+    <button onclick="myeffect2()">show box</button>
+
+    <script>B
+        function myeffect(){
+      document.getElementById("con").style.display="none";
+          }
+        function myeffect2(){
+          document.getElementById("con").style.display="inline"
+        }
+    </script>
+
+</body>
+</html>

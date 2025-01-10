@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>while and do-while loop</h1>
+   <script>
+
+
+                          // find number of digits
+ /*   let n=200;
+    let digit=0;
+    while(n>0){
+       n= parseInt(n/10);
+       digit++
+    }
+    console.log(digit);
+    */
+
+
+    
+                          // sum of number of digits
+
+ /*   let sum=0;
+    let n=123;
+    let r=0;
+    while(n>0){
+     r=parseInt(n%10)
+     sum +=r;
+     n=parseInt(n/10);
+    }
+    console.log(sum);
+*/
+
+               //sum of digits
+/*              
+let sum=0;
+    let n=123;
+    let r=0;
+    while(n>0){
+     r=parseInt(n%10)
+     sum +=r;
+     n=parseInt(n/10);
+    }
+    console.log(sum);
+
+*/
+
+
+
+                 //armstrong number
+
+   let sum=0;
+     let n=9474;
+     let arm=n;
+     let str=n.toString()
+     let pow=str.length
+    let r=0;
+    while(n>0){
+     r=parseInt(n%10)
+     sum +=r**pow;
+     n=parseInt(n/10);
+    }
+    if(sum==arm){
+        console.log(sum + " is an armstrong number");
+    }
+    else{
+        console.log(sum + " is not an armstrong number");
+        
+    }
+
+
+
+
+
+                     // palindrome Number
+  /*  let n=1001;
+    let sum="";
+    let p=n;
+    let r=0;
+    while(n>0){
+     r=parseInt(n%10)
+     sum +=r;
+     n=parseInt(n/10);
+    }
+    if(p==sum){
+        console.log(p + " is palindrome");
+
+    }
+    else{
+        console.log(p + " is not palindrome");
+    }
+     */    
+    
+     
+                              
+                     //fibonacci series
+/* let n=10;
+let n1=0;
+let n2=1;
+let sum="0\n1";
+let i=1;
+while(n>=i){
+   console.log(sum);
+   sum=n1+n2;
+   n1=n2;
+   n2=sum;
+   i++
+}
+*/
+
+
+// let str="3"
+// let num=5
+// up=5;
+// str= (num+up);
+// console.log(str);
+
+
+   </script> 
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="active.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="btn1" class="active" onclick="activeTab(this,'home')" > Home</li>
+            <li id="btn2"  onclick="activeTab(this,'About')"> About</li>
+            <li id="btn3" onclick="activeTab(this,'Contact')">Contact</li>
+            <li id="btn4" onclick="activeTab(this,'Blog')">Blog</li>
+        </ul>
+    </nav>
+    <div style="display: block;" class="page" id="home">
+        <h1>Welcome to Home</h1>
+    </div>
+    <div style="display: none;" class="page" id="About">
+        <h1>About us</h1>
+    </div>
+    <div style="display: none;" class="page"  id="Contact">
+        <h1>Contact Me</h1>
+    </div>
+    <div style="display: none;" class="page" id="Blog" >
+        <h1>Welcome to My Blog</h1>
+    </div>
+    <script>
+        function activeTab(currentBtn,tabs){
+            document.getElementById("home").style="display:none;"
+            document.getElementById("About").style="display:none;"
+            document.getElementById("Contact").style="display:none;"
+            document.getElementById("Blog").style="display:none;"
+
+            document.getElementById(tabs).style.display="block";
+
+            document.getElementById("btn1").classList.remove("active");
+            document.getElementById("btn2").classList.remove("active");
+            document.getElementById("btn3").classList.remove("active");
+            document.getElementById("btn4").classList.remove("active");
+
+            currentBtn.classList.add("active");
+           
+        }
+        
+    </script>
+</body>
+</html>

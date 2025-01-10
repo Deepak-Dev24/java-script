@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            text-align: center;
+            background-color: powderblue;
+            padding: 100px;
+        }
+        .container{
+            background-color: aqua;
+            display: inline-block;
+            padding: 10px;
+            margin: 20px;
+        }
+        #clock{
+            margin: 0px
+               }
+    </style>
+</head>
+<body>
+    <h1>my clock</h1>
+    <div class="container">
+        <p id="day"></p>
+        <h1 id="clock"></h1>
+        <p id="date"></p>
+
+    </div>
+    <script>
+       
+       
+        function displayTime(){
+            let now = new Date();
+            let hour=now.getHours();
+            let minute=now.getMinutes();
+            let second=now.getSeconds();
+            let date=now.getDate();
+            let month=now.getMonth();
+            let day=now.getDay();
+            let year=now.getFullYear();
+            // to print day
+            switch (day) {
+                case 1:
+                    day="Monday";
+                    break;
+                case 2:
+                    day="Tuesday";
+                    break;
+                case 3:
+                    day="Wednesday";
+                    break;
+                case 4:
+                    day="Thursday";
+                    break;
+                case 5:
+                    day="Friday";
+                    break;
+                case 6:
+                    day="Suturday";
+                    break;     
+                default:
+                   day="Sunday";
+                    break;
+            }
+            // for am and pm
+            let ampm='';
+            if(hour<=12){
+              ampm='am';
+            }
+            else{
+                ampm='pm';
+            }
+            const dateTimeMonth=`${date}:${month}:${year}`;
+            const time= `${hour}:${minute}:${second}:${ampm}`;
+            document.getElementById("date").innerHTML=dateTimeMonth;
+            document.getElementById("clock").innerHTML = time;
+            document.getElementById("day").innerHTML = day;
+        }
+      
+        setInterval(displayTime, 1000);
+        displayTime();
+       
+        
+
+
+    </script>
+</body>
+</html>

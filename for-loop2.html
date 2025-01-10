@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> for loop day 2</h1>
+    <script>
+        //some of given variable  
+        /*
+       let n=3;
+        let sum=0;
+        for(let i=0; i<=n; i++){
+            sum=sum+i;
+
+        }
+        console.log(sum);
+       */
+
+        //factorial of a given number
+        /*                             
+         let n=5;      
+         let fact=1;
+         for(i=1; i<=n; i++){
+            fact=fact*i
+         }            
+         console.log("The factorial of " + n + " is " + fact);          
+        */
+
+
+
+        /*                             //Table of a given number
+        let n=5;
+        for(let i=1; i<=10; i++){
+            console.log(n + "*" + i + "=" + n*i);
+        }
+        */
+
+        //Prime number 
+        let n = 11;
+        let isprime = true;
+        for (let i = 2; i < n / 2; i++) {
+            if (n % i === 0) {
+                isprime = false;
+                break;
+            }
+        }
+        if (isprime) {
+            console.log(n+ " is prime number");
+        }
+        else {
+            console.log(n+ " is not prime number");
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

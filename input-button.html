@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .new{
+            width: 300px;
+            transition: all .3s ease-in;
+            background-color: blue;
+        }
+
+        .old{
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <input class="old" id="one" type="text">
+    <input id="two" type="text">
+    <br>
+    <br>
+    <button onclick="add()" type="button">+</button>
+    <button onclick="sub()" type="button">-</button>
+    <button onclick="mul()" type="button">*</button>
+    <button onclick="div()" type="button">/</button>
+    <button onclick="addStyle()" type="button">style</button>
+    <script>
+        function add(){
+           let n1= document.getElementById("one").value;
+           let n2= document.getElementById("two").value;
+         console.log(parseInt(n1)+parseInt(n2));
+         
+        }
+        function sub(){
+            let n1= document.getElementById("one").value;
+           let n2= document.getElementById("two").value;
+       console.log(parseInt(n1)-parseInt(n2));   
+       document.getElementById("one").value =""
+       document.getElementById("two").value=""    
+         }
+        function mul(){
+            let n1= document.getElementById("one").value;
+           let n2= document.getElementById("two").value;
+            console.log(parseInt(n1)*parseInt(n2));   
+             }
+        function div(){
+            let n1= document.getElementById("one").value;
+           let n2= document.getElementById("two").value;
+            console.log(parseInt(n1)/parseInt(n2));       
+         }
+
+         function addStyle(){
+            let input = document.getElementById("one");
+            input.classList.remove("old")
+            // input.classList.add("new")
+         }
+    </script>
+</body>
+</html>
